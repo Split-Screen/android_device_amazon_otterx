@@ -48,3 +48,6 @@ RECOVERY_SDCARD_ON_DATA := true
 
 # Enable dalvik startup with a low memory footprint
 TARGET_ARCH_LOWMEM := true
+
+# low-RAM optimizations for PAC-ROM
+PAC_LOW_RAM_DEVICE := true
