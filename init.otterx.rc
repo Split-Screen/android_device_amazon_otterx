@@ -19,9 +19,6 @@ on charger
     wait /dev/block/platform/omap/omap_hsmmc.1/by-name/system
     mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/system /system ro barrier=1
 
-service sdcard /system/bin/sdcard -u 1023 -g 1023 -l /data/media /mnt/shell/emulated
-    class late_start
-
 service charger /sbin/healthd -c
     class charger
     critical
